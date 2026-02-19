@@ -4,14 +4,18 @@ public class objFastFood {
     private int Cantidad;
     private Double PrecioUnidad;
     private Double TotalPagar;
+    private int NumeroPedido;
+    private int EstadoPedido;
 
-    public objFastFood(int tipo, int tamano, int cantidad, Double precioUnidad, Double totalPagar) {
+    public objFastFood(int tipo, int tamano, int cantidad, Double precioUnidad, Double totalPagar, int numeroPedido,
+            int estadopedido) {
         Tipo = tipo;
         Tamano = tamano;
         Cantidad = cantidad;
         PrecioUnidad = precioUnidad;
         TotalPagar = totalPagar;
-
+        NumeroPedido = numeroPedido;
+        EstadoPedido = estadopedido;
     }
 
     public objFastFood() {
@@ -55,6 +59,22 @@ public class objFastFood {
 
     public void setTotalPagar(Double totalPagar) {
         TotalPagar = totalPagar;
+    }
+
+    public int getNumeroPedido() {
+        return NumeroPedido;
+    }
+
+    public void setNumeroPedido(int numeroPedido) {
+        NumeroPedido = numeroPedido;
+    }
+
+    public int getEstadoPedido() {
+        return EstadoPedido;
+    }
+
+    public void setEstadoPedido(int estadoPedido) {
+        EstadoPedido = estadoPedido;
     }
 
 }
