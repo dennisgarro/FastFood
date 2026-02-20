@@ -1,6 +1,8 @@
+
 import java.util.Scanner;
 
 public class metodos {
+
     public objFastFood[][] Ingresarpedidos(int n, Scanner sc) {
         objFastFood[][] m = new objFastFood[n][n];
         metodos M = new metodos();
@@ -34,7 +36,7 @@ public class metodos {
                     o.setCantidad(sc.nextInt());
                     System.out.println("Ingrese el precio");
                     o.setPrecioUnidad(sc.nextDouble());
-                    o.setTotalPagar(Cantidad * PrecioUnidad);
+                    o.setTotalPagar(o.getCantidad() * o.getPrecioUnidad());
                     o.setNumeroPedido(numeroPedido);
                     o.setEstadoPedido(0);
                     m[i][j] = o;
@@ -70,14 +72,15 @@ public class metodos {
 
     public int ValidarEntero(Scanner sc) {
         while (!sc.hasNextInt()) {
-            System.out.println("por favor ingrese un nmero valido");
+            System.out.println("por favor ingrese un número valido");
+            sc.next();
         }
         return sc.nextInt();
     }
 
     public Double ValidarDecimal(Scanner sc) {
         while (!sc.hasNextDouble()) {
-            System.out.println("por favor ingrese un nmero valido");
+            System.out.println("por favor ingrese un número valido");
         }
         return sc.nextDouble();
     }
@@ -132,6 +135,8 @@ public class metodos {
                 } else {
                     System.out.println("Atendido");
                 }
+                System.out.println("------------------------------------------------------------");
+                System.out.println();
             }
         }
 
