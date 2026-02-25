@@ -1,5 +1,5 @@
 package punto4;
-
+//GoodBye
 public class objMAtributos{
     private String Descripcion;
     private int Cantidad;

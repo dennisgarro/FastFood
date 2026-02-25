@@ -1,5 +1,5 @@
 package punto4;
-
+//Adios
 public class obj {
     private int dato;
 
